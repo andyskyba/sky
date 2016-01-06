@@ -1,6 +1,6 @@
 <?php 
 
-//settings
+//general settings
 $quantity = 10;
 $minVal = 1;
 $maxVal = 100;
