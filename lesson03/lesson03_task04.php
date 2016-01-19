@@ -5,15 +5,12 @@
   $factorial = function( $n ) use ( &$factorial ) {
     $base = $x = 1;
     while(TRUE){
-    	if(($x *= (++$base)) >= $n ) {
-    		if ($x > $n){      //Additional checkpoint
-    			return ($base-1);
-    		} else return $base;
+    	if(($x *= (++$base)) >= $n )
+    		return ($x > $n)? ($base-1) : $base;
     	}
-	}
 };
 
-print $factorial( 121 );
+print $factorial( 119 );
 //
 // Output execution time for script
 $time = microtime(TRUE) - $start;
